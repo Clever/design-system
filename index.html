@@ -14,14 +14,20 @@
 			<nav>
 				<h1 class="mt1 mb2 blue">Clever</h1>
 				<ul class="list-reset">
-					<li>Principles</li>
-					<li>Colors</li>
-					<li>Typography</li>
+					<li><a href="#principles">Principles</a></li>
+					<li><a href="#colors">Colors</a></li>
+					<li><a href="#type">Typography</a></li>
+					<li><a href="#components">Components</a>
+						<ul class="list-reset ml2">
+							<li><a href="#buttons">Buttons</a></li>
+							<li><a href="#text-inputs">Text Inputs</a></li>
+						</ul>
+					</li>
 				</ul>
 			</nav>
 		</div>
 		<div class="container px4 sm-col-12 md-col-8 lg-col-9 flex flex-wrap">
-			<div class="mb3 col-12">
+			<div class="mb3 col-12" id="principles">
 				<header class="pt1 pb2 border-bottom">
 					<h1>Principles</h1>
 				</header>
@@ -72,7 +78,7 @@
 				</div>
 			</div>
 
-			<div class="mb3 col-12">
+			<div class="mb3 col-12" id="colors">
 				<header class="pt1 pb2 mb2 border-bottom">
 					<h1>Colors</h1>
 				</header>
@@ -336,7 +342,7 @@
 				</div>
 			</div>
 
-			<div class="mb3 col-12">
+			<div class="mb3 col-12" id="type">
 				<header class="pt1 pb2 mb2 border-bottom">
 					<h1>Typography</h1>
 				</header>
@@ -373,11 +379,14 @@
 				</div>
 			</div>
 
-			<div class="mb3 col-12">
+			<div class="mb3 col-12" id="components">
 				<header class="pt1 pb2 mb2 border-bottom">
-					<h1>Buttons</h1>
+					<h1>Components</h1>
 				</header>
 				<div class="flex flex-wrap pt2">
+					<header class="border-bottom border-silver" id="buttons">
+						<h2>Buttons</h2>
+					</header>
 					<div class="col-12">
 						<button class="btn blue">Text Button</button>
 						<button class="btn bg-blue border-blue-s-2 offwhite">Primary Button</button>
@@ -385,14 +394,10 @@
 						<button class="btn offwhite bg-red border-red-s-2">Destructive Button</button>
 						<button class="btn bg-gray border-darkgray disabled">Disabled</button>
 				</div>
-			</div>
-
-			<div class="mb3 col-12">
-				<header class="pt1 pb2 mb2 border-bottom">
-					<h1>Form Fields</h1>
+				<header class="border-bottom border-silver" id="text-input">
+					<h2>Text Input</h2>
 				</header>
-				<div class="flex flex-wrap pt2">
-					<div class="flex col-12">
+				<div class="flex col-12">
 						<inputgroup class="flex col-6 relative">
 							<label class="h6 caps darkgray line-height-1 absolute ml1 mt1">Label</label>
 							<span class="h6 caps red line-height-1 absolute right-0 mr1 mt1"></span>
@@ -409,7 +414,6 @@
 							<input class="col-12 border border-left-thick border-red px1 pt2 pb1 h4 line-height-4" type="text" value="invalid text here" required>
 						</inputgroup>
 					</div>
-				</div>
 			</div>
 
 		</div>
