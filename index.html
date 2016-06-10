@@ -17,7 +17,7 @@
 					<li><a class="text-decoration-none blue" href="#principles">Principles</a></li>
 					<li><a class="text-decoration-none blue" href="#colors">Colors</a></li>
 					<li><a class="text-decoration-none blue" href="#type">Typography</a></li>
-						<ul class="list-reset ml2 mt0">
+						<ul class="list-reset ml2 mt0 mb0">
 							<li><a class="text-decoration-none blue" href="#typescale">Typescale</a></li>
 							<li><a class="text-decoration-none blue" href="#typeweight">Type Weights</a></li>
 							<li><a class="text-decoration-none blue" href="#typeexamples">Type Examples</a></li>
@@ -331,26 +331,6 @@
 							</div>
 						</div>
 					</div>
-
-<!-- 					<div class="flex col-4 p2">
-						<div class="col-12 bg-white border border-gray rounded">
-							<div class="col-12 p4 bg-pink"></div>
-							<div class="col-12 flex">
-								<div class="col-3 py2 bg-pink-t-4"></div>
-								<div class="col-3 py2 bg-pink-t-3"></div>
-								<div class="col-3 py2 bg-pink-t-2"></div>
-								<div class="col-3 py2 bg-pink-t-1"></div>
-								<div class="col-3 py2 bg-pink-s-1"></div>
-								<div class="col-3 py2 bg-pink-s-2"></div>
-								<div class="col-3 py2 bg-pink-s-3"></div>
-								<div class="col-3 py2 bg-pink-s-4"></div>
-							</div>
-							<div class="center">
-								<p>Pink</p>
-							</div>
-						</div>
-					</div> -->
-
 				</div>
 			</div>
 
@@ -373,7 +353,7 @@
 					</div>
 				</div>
 
-				<header class="pt1">
+				<header class="pt1" id="typeweight">
 					<h2>Type Weight</h2>
 					<p>To limit type choices, Clever uses three font weights only.</p>
 				</header>
@@ -385,7 +365,7 @@
 					</div>
 				</div>
 
-				<header class="pt1">
+				<header class="pt1" id="typeexamples">
 					<h2>Type Examples</h2>
 					<p>These are prototypical examples of text clarifying what weight, size, and color to use for various use cases.</p>
 				</header>
@@ -496,7 +476,7 @@
 			</div>
 
 			<div class="mb3 col-12" id="components">
-				<header class="pt1 pb2 mb2 border-bottom">
+				<header class="pt1 pb2 mb0 border-bottom">
 					<h1>Components</h1>
 				</header>
 				<div class="flex flex-wrap pt2">
@@ -509,27 +489,67 @@
 						<button class="btn btn-outline blue border-blue">Button</button>
 						<button class="btn offwhite bg-red border-red-s-2">Destructive Button</button>
 						<button class="btn bg-gray border-darkgray disabled">Disabled</button>
+					</div>
 				</div>
-				<header class="" id="text-input">
+				<header class="pt1" id="text-input">
 					<h2>Text Input</h2>
 				</header>
 				<div class="flex col-12">
-						<inputgroup class="flex col-6 relative">
-							<label class="h6 caps darkgray line-height-1 absolute ml1 mt1">Label</label>
-							<span class="h6 caps red line-height-1 absolute right-0 mr1 mt1"></span>
-							<input class="col-12 border border-silver px1 pt2 pb1 h4 line-height-4" type="text" value="Text here">
-						</inputgroup>
-						<inputgroup class="flex col-6 relative">
-							<label class="h6 caps darkgray line-height-1 absolute ml1 mt1">Label</label>
-							<span class="h6 caps red line-height-1 absolute right-0 mr1 mt1">Required</span>
-							<input class="col-12 border border-silver px1 pt2 pb1 h4 line-height-4" type="text" value="Text here" required>
-						</inputgroup>
-						<inputgroup class="flex col-6 relative">
-							<label class="h6 caps darkgray line-height-1 absolute ml2 mt1">Label</label>
-							<span class="h6 caps red line-height-1 absolute right-0 mr1 mt1">This is the wrong text</span>
-							<input class="col-12 border border-left-thick border-red px1 pt2 pb1 h4 line-height-4" type="text" value="invalid text here" required>
-						</inputgroup>
-					</div>
+					<inputgroup class="flex col-6 relative">
+						<label class="h6 caps darkgray line-height-1 absolute ml1 mt1">Label</label>
+						<span class="h6 caps red line-height-1 absolute right-0 mr1 mt1"></span>
+						<input class="col-12 border border-silver px1 pt2 pb1 h4 line-height-4" type="text" value="Text here">
+					</inputgroup>
+					<inputgroup class="flex col-6 relative">
+						<label class="h6 caps darkgray line-height-1 absolute ml1 mt1">Label</label>
+						<span class="h6 caps red line-height-1 absolute right-0 mr1 mt1">Required</span>
+						<input class="col-12 border border-silver px1 pt2 pb1 h4 line-height-4" type="text" value="Text here" required>
+					</inputgroup>
+					<inputgroup class="flex col-6 relative">
+						<label class="h6 caps darkgray line-height-1 absolute ml2 mt1">Label</label>
+						<span class="h6 caps red line-height-1 absolute right-0 mr1 mt1">This is the wrong text</span>
+						<input class="col-12 border border-left-thick border-red px1 pt2 pb1 h4 line-height-4" type="text" value="invalid text here" required>
+					</inputgroup>
+				</div>
+				<header class="pt1" id="table">
+					<h2>Table</h2>
+				</header>
+				<table class="flex flex-wrap col-12">
+					<thead class="bg-gray p1 flex col-12">
+						<tr class="flex flex-wrap col-12 items-center align-left content-start">
+							<th class="table-cell flex col-3">Header Cell 1</th>
+							<th class="table-cell flex col-3">Header Cell 2</th>
+							<th class="table-cell flex col-3">Header Cell 3</th>
+							<th class="table-cell flex col-3">Header Cell 4</th>
+						</tr>
+					</thead>
+					<tbody class="flex flex-wrap col-12">
+						<tr class="flex col-12 items-center align-left content-start p1">
+							<td class="table-cell flex col-3">Cell contents 1</td>
+							<td class="table-cell flex col-3">Cell contents 2</td>
+							<td class="table-cell flex col-3">Cell contents 3</td>
+							<td class="table-cell flex col-3">Cell contents 4</td>
+						</tr>
+						<tr class="flex col-12 items-center align-left content-start p1 bg-silver">
+							<td class="table-cell flex col-3">Cell contents 1</td>
+							<td class="table-cell flex col-3">Cell contents 2</td>
+							<td class="table-cell flex col-3">Cell contents 3</td>
+							<td class="table-cell flex col-3">Cell contents 4</td>
+						</tr>
+						<tr class="flex col-12 items-center align-left content-start p1">
+							<td class="table-cell flex col-3">Cell contents 1</td>
+							<td class="table-cell flex col-3">Cell contents 2</td>
+							<td class="table-cell flex col-3">Cell contents 3</td>
+							<td class="table-cell flex col-3">Cell contents 4</td>
+						</tr>
+						<tr class="flex col-12 items-center align-left content-start p1 bg-silver">
+							<td class="table-cell flex col-3">Cell contents 1</td>
+							<td class="table-cell flex col-3">Cell contents 2</td>
+							<td class="table-cell flex col-3">Cell contents 3</td>
+							<td class="table-cell flex col-3">Cell contents 4</td>
+						</tr>						
+					</tbody>
+				</table>
 			</div>
 
 		</div>
