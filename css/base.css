@@ -132,7 +132,10 @@ hr{
 .text-decoration-none{ text-decoration:none }
 
 
-.bold{ font-weight:bold; font-weight:bold }
+.bold{ font-weight:bold; font-weight:bold; font-family:'Proxima Nova Semibold', 'ProximaNovaLtSemibold', 'Helvetica Neue', Helvetica, sans-serif }
+
+
+.light{ font-weight:200; font-weight:200; font-family:'Proxima Nova Light', 'ProximaNovaLtLight', 'Helvetica Neue Light', Helvetica, sans-serif }
 
 
 .regular{ font-weight:normal }
