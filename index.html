@@ -17,6 +17,11 @@
 					<li><a class="text-decoration-none blue" href="#principles">Principles</a></li>
 					<li><a class="text-decoration-none blue" href="#colors">Colors</a></li>
 					<li><a class="text-decoration-none blue" href="#type">Typography</a></li>
+						<ul class="list-reset ml2 mt0">
+							<li><a class="text-decoration-none blue" href="#typescale">Typescale</a></li>
+							<li><a class="text-decoration-none blue" href="#typeweight">Type Weights</a></li>
+							<li><a class="text-decoration-none blue" href="#typeexamples">Type Examples</a></li>
+						</ul>
 					<li><a class="text-decoration-none blue" href="#components">Components</a>
 						<ul class="list-reset ml2 mt0">
 							<li><a class="text-decoration-none blue" href="#buttons">Buttons</a></li>
@@ -28,7 +33,7 @@
 		</div>
 		<div class="container px4 sm-col-12 md-col-8 lg-col-9 flex flex-wrap">
 			<div class="mb3 col-12" id="principles">
-				<header class="pt1 pb2 border-bottom">
+				<header class="pt1 pb2 mb3 border-bottom">
 					<h1>Principles</h1>
 				</header>
 				<div class="flex flex-wrap">
@@ -79,7 +84,7 @@
 			</div>
 
 			<div class="mb3 col-12" id="colors">
-				<header class="pt1 pb2 mb2 border-bottom">
+				<header class="pt1 pb2 border-bottom">
 					<h1>Colors</h1>
 				</header>
 				<header class="py1">
@@ -350,7 +355,7 @@
 			</div>
 
 			<div class="mb3 col-12" id="type">
-				<header class="pt1 pb2 mb2 border-bottom">
+				<header class="pt1 pb2 border-bottom">
 					<h1>Typography</h1>
 				</header>
 				<header class="pt1">
@@ -359,18 +364,30 @@
 				</header>
 				<div class="flex flex-wrap">
 					<div class="col-12">
-						<p class="h1 line-height-1">Giant Text</p>
-						<p class="h2 line-height-1">Huge Text</p>
-						<p class="h3 line-height-1">Large Text</p>
-						<p class="h4 line-height-1">Regular Text</p>
-						<p class="h5 line-height-1">Small Text</p>
-						<p class="h6 line-height-1">Tiny Text</p>
+						<p class="h1 line-height-1">Giant Text - 2.5 rem</p>
+						<p class="h2 line-height-1">Huge Text - 2 rem</p>
+						<p class="h3 line-height-1">Large Text - 1.5 rem</p>
+						<p class="h4 line-height-1">Regular Text - 1 rem</p>
+						<p class="h5 line-height-1">Small Text - .75 rem</p>
+						<p class="h6 line-height-1">Tiny Text - .625 rem</p>
 					</div>
 				</div>
 
 				<header class="pt1">
-					<h2>Type Usage</h2>
-					<p>Type usage is for specific clarification of what weight, size, and color to use for various elements.</p>
+					<h2>Type Weight</h2>
+					<p>To limit type choices, Clever uses three font weights only.</p>
+				</header>
+				<div class="flex flex-wrap">
+					<div class="col-12">
+						<p class="line-height-1 bold">Proxima Nova Semibold</p>
+						<p class="regular line-height-1">Proxima Nova</p>
+						<p class="light line-height-1">Proxima Nova Light</p>
+					</div>
+				</div>
+
+				<header class="pt1">
+					<h2>Type Examples</h2>
+					<p>These are prototypical examples of text clarifying what weight, size, and color to use for various use cases.</p>
 				</header>
 				<div class="flex flex-wrap">
 					<div class="col-12">
@@ -401,12 +418,79 @@
 								<code class="col-12">class="h3 caps light darkgray line-height-1"</code>
 							</div>
 						</div>
+						<div class="flex flex-wrap items-baseline">
+							<div class="flex col-4">
+								<p class="h4 line-height-1">Body Text</p>
+							</div>
+							<div class="flex flex-wrap col-8 px2">
+								<p class="h4 line-height-4 col-12">This should be the majority of text in the UI.</p>
+								<code class="col-12">class="h4 line-height-4"</code>
+							</div>
+						</div>
+						<div class="flex flex-wrap items-baseline">
+							<div class="flex col-4">
+								<p class="italic h4 line-height-1">Italic Text</p>
+							</div>
+							<div class="flex flex-wrap col-8 px2">
+								<p class="h4 line-height-4 col-12">Our italic text.</p>
+								<code class="col-12">class="h4 italic line-height-4"</code>
+							</div>
+						</div>
+						<div class="flex flex-wrap items-baseline">
+							<div class="flex col-4">
+								<p class="bold h4 line-height-1">Strong Text</p>
+							</div>
+							<div class="flex flex-wrap col-8 px2">
+								<p class="h4 line-height-4 col-12">Our strong text.</p>
+								<code class="col-12">class="h4 bold line-height-4"</code>
+							</div>
+						</div>
+						<div class="flex flex-wrap items-baseline">
+							<div class="flex col-4">
+								<p class="blue bold h4 line-height-1">Link Text</p>
+							</div>
+							<div class="flex flex-wrap col-8 px2">
+								<p class="h4 line-height-4 col-12">Text we use for links and in secondary buttons</p>
+								<code class="col-12">class="h4 blue bold line-height-4"</code>
+							</div>
+						</div>
+						<div class="flex flex-wrap items-baseline">
+							<div class="flex col-4">
+								<p class="offwhite bg-blue px1 bold h4 line-height-1">Inverse Link Text</p>
+							</div>
+							<div class="flex flex-wrap col-8 px2">
+								<p class="h4 line-height-4 col-12">Text we use on darker backgrounds and in most buttons</p>
+								<code class="col-12">class="h4 offwhite bold line-height-4"</code>
+							</div>
+						</div>
+						<div class="flex flex-wrap items-baseline">
+							<div class="flex col-4">
+								<p class="h5 caps darkgray line-height-1">Placeholder Text</p>
+							</div>
+							<div class="flex flex-wrap col-8 px2">
+								<p class="h4 line-height-4 col-12">Text we use for placeholder s in form fields.</p>
+								<code class="col-12">class="h5 caps darkgray line-height-1"</code>
+							</div>
+						</div>
+						<div class="flex flex-wrap items-baseline">
+							<div class="flex col-4">
+								<p class="h6 bold caps darkgray line-height-1">Label Text</p>
+							</div>
+							<div class="flex flex-wrap col-8 px2">
+								<p class="h4 line-height-4 col-12">Text we use for labels in forms.</p>
+								<code class="col-12">class="h6 bold caps darkgray line-height-1"</code>
+							</div>
+						</div>
+						<div class="flex flex-wrap items-baseline">
+							<div class="flex col-4">
+								<p class="h6 bold caps red line-height-1">Validation Errors</p>
+							</div>
+							<div class="flex flex-wrap col-8 px2">
+								<p class="h4 line-height-4 col-12">Text we use for validation errors in forms.</p>
+								<code class="col-12">class="h6 bold caps darkgray line-height-1"</code>
+							</div>
+						</div>
 
-						<p class="h4 line-height-1">Body Text</p>
-						<p class="h4 line-height-4">Some days you get the bear, and some days the bear gets you. My oath is between Captain Kargan and myself. Your only concern is with how you obey my orders. Or do you prefer the rank of prisoner to that of lieutenant? In all trust, there is the possibility for betrayal. This is not about revenge. This is about justice. When has justice ever been as simple as a rule book? The look in your eyes, I recognize it. You used to have it for me.</p>
-						<p class="h5 line-height-1">Small Text</p>
-						<p class="h6 caps darkgray line-height-1">Form Label</p>
-						<p class="h5 caps darkgray line-height-1">Placeholder Text</p>
 					</div>
 				</div>
 			</div>
