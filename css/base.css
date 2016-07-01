@@ -1421,8 +1421,17 @@ hr{
 .label{
   font-size:.875rem;
   font-weight:bold;
-  display:block;
-  margin-bottom:.5rem;
+  position:absolute;
+  top:-1em;
+  left:0.08em;
+  color:#566279;
+  text-transform:uppercase;
+  z-index:-1;
+  animation:float-labels 300ms none ease-out;
+  -webkit-animation:float-labels 300ms none ease-out;
+
+  animation-play-state:running !important;
+  -webkit-animation-play-state:running !important;
 }
 
 
@@ -1431,11 +1440,80 @@ hr{
   font-size:inherit;
   display:block;
   width:100%;
-  height:2.5rem;
-  padding:.5rem;
-  margin-bottom:1rem;
-  border:1px solid #ccc;
-  border-radius:3px;
+  height:3.125rem;
+  padding-top:1rem;
+  padding-bottom:.5rem;
+  padding-left:.5rem;
+  padding-right:.5rem;
+  border:1px solid #E3E6EB;
+  outline:none;
+}
+
+
+.input:not(.empty):focus{
+  border-color:#4274F6;
+  border-left-width:.3rem;
+  padding-left:.2rem;
+}
+
+
+.input.empty + .label{
+  top:0.1em;
+  font-size:1.5em;
+  animation:none;
+  -webkit-animation:none;
+}
+
+
+@keyframes float-labels{
+  
+   0%{
+    opacity:1;
+    color:#aaa;
+    top:0.1em;
+    font-size:1.5em;
+  }
+  20%{
+    font-size:1.5em;
+    opacity:0;
+  }
+  30%{
+    top:0.1em;
+  }
+  50%{
+    opacity:0;
+    font-size:0.85em;
+  }
+  100%{
+    top:-1em; 
+    opacity:1; 
+  }
+}
+
+
+@-webkit-keyframes float-labels{
+  
+ 0%{
+    opacity:1;
+    color:#aaa;
+    top:0.1em;
+    font-size:1.5em;
+  }
+  20%{
+    font-size:1.5em;
+    opacity:0;
+  }
+  30%{
+    top:0.1em;
+  }
+  50%{
+    opacity:0;
+    font-size:0.85em;
+  }
+  100%{
+    top:-1em; 
+    opacity:1; 
+  }
 }
 
 
@@ -1443,7 +1521,7 @@ hr{
   font-family:inherit;
   font-size:inherit;
   display:block;
-  width:100%;
+  width:inherit;
   height:2.5rem;
   padding:.5rem;
   margin-bottom:1rem;

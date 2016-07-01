@@ -32,6 +32,16 @@
 			</nav>
 		</div>
 		<div class="container px4 sm-col-12 md-col-8 lg-col-9 flex flex-wrap">
+
+			<div class="mb3 col-12" id="WIP">
+				<header class="pt1 pb2 mb0 border-bottom">
+					<h1 class="red">WIP Disclaimer</h1>
+				</header>
+				<div class="flex flexp-wrap pt2">
+					<p class="h4 line-height-4 col-12">The design system is work in progress. Please check in with Carl in the #design channel or in person for help or questions.</p>
+				</div>
+			</div>
+
 			<div class="mb3 col-12" id="principles">
 				<header class="pt1 pb2 mb3 border-bottom">
 					<h1>Principles</h1>
@@ -400,10 +410,10 @@
 						</div>
 						<div class="flex flex-wrap items-baseline">
 							<div class="flex col-4">
-								<p class="h4 line-height-1">Body Text</p>
+								<p class="h4 line-height-1">UI Text</p>
 							</div>
 							<div class="flex flex-wrap col-8 px2">
-								<p class="h4 line-height-4 col-12">This should be the majority of text in the UI.</p>
+								<p class="h4 line-height-4 col-12">This should be the majority of text in the UI. UI text should almost never be longer than a short phrase or sentence, unless the text is purely descriptive (i.e. the description of an application).</p>
 								<code class="col-12">class="h4 line-height-4"</code>
 							</div>
 						</div>
@@ -492,30 +502,44 @@
 					</div>
 				</div>
 				<header class="pt1" id="text-input">
-					<h2>Text Input</h2>
+					<h2>Form Inputs</h2>
 				</header>
-				<div class="flex col-12">
+				<div class="flex flex-wrap col-12">
+					<h3>Empty Form Input</h3>
+					<div class="flex flex-wrap col-12">
+						<inputgroup class="flex col-6 relative inputgroup">
+							<label class="h6 caps darkgray line-height-1 absolute ml1 mt1">Label</label>
+							<span class="h6 caps red line-height-1 absolute right-0 mr1 mt1"></span>
+							<input class="col-12 input line-height-4" type="text" value="Text here">
+						</inputgroup>
+					</div>
+
+					<inputgroup class="flex col-6 relative">
+						<span class="h6 caps red line-height-1 absolute right-0 mr1 mt1"></span>
+						<input class="col-12 input line-height-4" type="text" placeholder="Placeholder Label">
+						<label class="h6 caps darkgray line-height-1 absolute ml1 mt1">Label</label>
+					</inputgroup>
 					<inputgroup class="flex col-6 relative">
 						<label class="h6 caps darkgray line-height-1 absolute ml1 mt1">Label</label>
 						<span class="h6 caps red line-height-1 absolute right-0 mr1 mt1"></span>
-						<input class="col-12 border border-silver px1 pt2 pb1 h4 line-height-4" type="text" value="Text here">
+						<input class="col-12 input line-height-4" type="text" value="Text here">
 					</inputgroup>
 					<inputgroup class="flex col-6 relative">
 						<label class="h6 caps darkgray line-height-1 absolute ml1 mt1">Label</label>
 						<span class="h6 caps red line-height-1 absolute right-0 mr1 mt1">Required</span>
-						<input class="col-12 border border-silver px1 pt2 pb1 h4 line-height-4" type="text" value="Text here" required>
+						<input class="col-12 input line-height-4" type="text" value="Text here" required>
 					</inputgroup>
-					<inputgroup class="flex col-6 relative">
+					<inputgroup class="flex col-6 relative border-left-thick border-red">
 						<label class="h6 caps darkgray line-height-1 absolute ml2 mt1">Label</label>
 						<span class="h6 caps red line-height-1 absolute right-0 mr1 mt1">This is the wrong text</span>
-						<input class="col-12 border border-left-thick border-red px1 pt2 pb1 h4 line-height-4" type="text" value="invalid text here" required>
+						<input class="col-12 border-red input line-height-4" type="text" value="invalid text here" required>
 					</inputgroup>
 				</div>
 				<header class="pt1" id="table">
 					<h2>Table</h2>
 				</header>
-				<table class="flex flex-wrap col-12">
-					<thead class="bg-gray p1 flex col-12">
+				<table class="flex flex-wrap col-12 border-left border-right border-silver">
+					<thead class="bg-silver py1 px2 flex col-12">
 						<tr class="flex flex-wrap col-12 items-center align-left content-start">
 							<th class="table-cell flex col-3">Header Cell 1</th>
 							<th class="table-cell flex col-3">Header Cell 2</th>
@@ -524,25 +548,25 @@
 						</tr>
 					</thead>
 					<tbody class="flex flex-wrap col-12">
-						<tr class="flex col-12 items-center align-left content-start p1">
+						<tr class="flex col-12 items-center align-left content-start py1 px2 border-bottom border-silver">
 							<td class="table-cell flex col-3">Cell contents 1</td>
 							<td class="table-cell flex col-3">Cell contents 2</td>
 							<td class="table-cell flex col-3">Cell contents 3</td>
 							<td class="table-cell flex col-3">Cell contents 4</td>
 						</tr>
-						<tr class="flex col-12 items-center align-left content-start p1 bg-silver">
+						<tr class="flex col-12 items-center align-left content-start py1 px2 bg-offwhite border-bottom border-silver">
 							<td class="table-cell flex col-3">Cell contents 1</td>
 							<td class="table-cell flex col-3">Cell contents 2</td>
 							<td class="table-cell flex col-3">Cell contents 3</td>
 							<td class="table-cell flex col-3">Cell contents 4</td>
 						</tr>
-						<tr class="flex col-12 items-center align-left content-start p1">
+						<tr class="flex col-12 items-center align-left content-start py1 px2 border-bottom border-silver">
 							<td class="table-cell flex col-3">Cell contents 1</td>
 							<td class="table-cell flex col-3">Cell contents 2</td>
 							<td class="table-cell flex col-3">Cell contents 3</td>
 							<td class="table-cell flex col-3">Cell contents 4</td>
 						</tr>
-						<tr class="flex col-12 items-center align-left content-start p1 bg-silver">
+						<tr class="flex col-12 items-center align-left content-start py1 px2 bg-offwhite border-bottom border-silver">
 							<td class="table-cell flex col-3">Cell contents 1</td>
 							<td class="table-cell flex col-3">Cell contents 2</td>
 							<td class="table-cell flex col-3">Cell contents 3</td>
