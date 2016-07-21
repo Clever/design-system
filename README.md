@@ -1,3 +1,7 @@
+# Clever Design System
+
+Lives at: http://clever.github.io/design-system/
+
 # Bassplate
 Boilerplate for [Basscss](http://basscss.com) with postcss
 
